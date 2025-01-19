@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --text-color: #1985A1;
+    --background-color: #aab9cf;
+    --link-color: #000000;
+}
+
+body {
+    background-color: var(--background-color);
+
+    background-image: url(assets/design-hotels-in-heritage-buildings-The-Warehouse-Hotel-Singapore-MAIN-IMAGE.webp);
+    background-size: cover;
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid var(--text-color);
+    background-color: var(--text-color);
+    padding: 10px 10px;
+}
+
+.img1 {
+    width: 50px;
+    margin-top: px;
+}
+
+nav .left a {
+    color: var(--link-color);
+    font-size: 40px;
+    align-items: center;
+}
+
+nav .right a:last-child {
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-size: 20px;
+}
+
+
+.intro {
+    text-align: center;
+    margin: 200px 450px;
+    padding: 10px 1px;
+    border: 5px solid var(--background-color);
+    background-color: var(--background-color);
+    border-radius: 0;
+}
+
+
+.intro h1 {
+    margin: 10px;
+}
+
+
+.dropbtn {
+    background-color: transparent;
+    color: black;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--background-color);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--text-color);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+
+
+
+
+/* SECTION 1 = ROOMS */
+.rooms-section .economy-rooms {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    min-height: 60vh;
+    background-color: var(--background-color);
+    margin-top: 100px;
+    margin: 100px 0px;
+}
+
+.economy-rooms h1 {
+    font-size: 50px;
+    color: var(--text-color);
+    padding: 5px;
+    text-align: left;
+}
+
+.rooms-section .economy-rooms p {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: left;
+}
+
+.economy-room-img {
+    max-width: 800px;
+    height: 300px;
+    float: left;
+    border-radius: 5%;
+    border: 2px solid var(--background-color);
+    margin-inline-end: 20px;
+}
+
+.economy-rooms {
+    margin: 100px 0px;
+    width: 100%;
+}
+
+
+/* MIDSCALE ROOMS */
+.midscale-rooms {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    min-height: 50vh;
+    background-color: var(--background-color);
+}
+
+.midscale-rooms h1 {
+    font-size: 70px;
+    color: var(--text-color);
+    text-align: left;
+}
+
+.midscale-rooms p {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: left;
+}
+
+.midscale-room-img {
+    max-width: 800px;
+    height: 300px;
+    float: left;
+    border-radius: 5%;
+    border: 2px solid var(--background-color);
+    margin-inline-end: 20px;
+}
+
+.midscale-rooms {
+    margin: 10px 10px;
+    width: 99%;
+}
+
+
+/* UPSCALE ROOMS */
+.upperscale-rooms {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50vh;
+    background-color: var(--background-color);
+}
+
+.upperscale-rooms h1 {
+    font-size: 70px;
+    color: var(--text-color);
+    text-align: left;
+}
+
+.upperscale-rooms p {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: left;
+    padding: 10px 10px;
+}
+
+.upperscale-room-img {
+    max-width: 600px;
+    height: 300px;
+    float: left;
+    border-radius: 5%;
+    border: 2px solid var(--background-color);
+    margin-inline-end: 20px;
+}
+
+.upperscale-rooms {
+    margin: 100px 10px;
+    width: 99%;
+}
+
+
+.split {
+    padding: 1px 0px;
+    background-color: #1985A1;
+}
+
+/* BOOK NOW SECTION */
+.booking {
+    text-align: center;
+    color: var(--link-color);
+}
+
+.booking .text {
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: italic;
+    padding: 20px;
+    align-items: center;
+}
+
+.booking .button1 {
+    width: 50%;
+    padding: 10px;
+    color: var(--link-color);
+    background-color: var(--text-color);
+    border: 2px solid var(--text-color);
+    transition: 0.4s;
+}
+
+.booking .button1 .text1 {
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.booking .button1:hover {
+    border: 2px solid var(--link-color);
+    background-color: black;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.split2 {
+    padding: 1px 0px;
+    background-color: #1985A1;
+}
+
+/* SECTION 2 = AMENITIES */
+.amenities-section {
+    padding: 2rem;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    max-width: 768px;
+    max-height: 768px;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fa0e0e;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+.amenities-section .amenities-text {
+    margin: 100px 100px;
+    padding: 50px 10px;
+    text-align: center;
+    background: #1985A1;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+.slideshow-header {
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    padding: 2rem;
+}
+
+/* Facilities Information */
+.facility-info {
+    text-align: center;
+    padding: 50px;
+    background-color: var(--text-color);
+    margin: 100px 100px;
+    border: var(--text-color);
+    border-radius: 10rem;
+    font-size: 70px; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.physical {
+    text-align: center;
+    background: var(--text-color);
+    border-radius: .5rem;
+    margin: 10px 10px;
+    padding: 10px;
+}
+
+.physical .split3 {
+    background-color: #000000;
+    color: #000000;
+    padding: 0.4px;
+}
+
+.physical h3 {
+    font-size: 50px;
+    text-align: left;
+    margin: 10px 10px;
+}
+
+.physical p {
+    padding: .1rem;
+    font-size: 20px;
+    margin: 10px 100px;
+    text-align: center;
+    font-weight: 550;
+}
+
+.relaxation {
+    text-align: center;
+    background: var(--link-color);
+    color: var(--background-color);
+    border-radius: .5rem;
+    margin: 10px 10px;
+    padding: 10px;
+}
+
+.relaxation h3 {
+    font-size: 50px;
+    text-align: left;
+    margin: 10px 10px;
+}
+
+.relaxation p {
+    padding: .1rem;
+    font-size: 20px;
+    margin: 10px 100px;
+    text-align: center;
+    font-weight: 550;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #111;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
